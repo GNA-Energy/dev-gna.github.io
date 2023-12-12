@@ -210,8 +210,11 @@ h6 {font-size: 2rem;}
 /* nav css end */
 
 .banner-slider-wraper {
-    background: linear-gradient(180deg, var(--light-orange) 0%, rgba(255, 255, 255, 0.00) 100%);
+    background: linear-gradient(180deg, var(--light-orange) 0%, rgba(255, 255, 255, 0.00) 100%); 
+    /* background: linear-gradient(180deg, var(--light-orange) 0%, rgba(255, 255, 255, 0.00) 100%), url('../images/cross-line-bg.svg');  */
+    background-position: bottom;
     text-align: center;
+
 }
 .banner-slider-wraper .splide__arrow { background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(241, 147, 92, 0.30) 0%, rgba(241, 147, 92, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.00) 76.6%, rgba(255, 255, 255, 0.00) 100%), #F1935C;}
 .banner-slider-wraper label {
@@ -318,9 +321,10 @@ h6 {font-size: 2rem;}
 .service-items .item h3 { color: var(--white); text-transform: uppercase;}
 .service-items .item img { margin-right: 4rem;}
 
-.otc-plateform {background: linear-gradient(180deg, #FBFCFF 0%, #DEE9FF 54.17%); padding: 10rem 0 35rem 0;}
+.otc-plateform {background: linear-gradient(180deg, #FBFCFF 0%, #DEE9FF 54.17%); padding: 10rem 0 40rem 0;}
 /* .otc-plateform:after {position: absolute; content: url('../images/otc-green-bg.svg');} */
 .otc-plateform .otc-wraper { position: relative; position: relative;  padding-left: 13rem;}
+.otc-plateform .otc-wraper h2 { margin-bottom: 1rem;}
 .otc-plateform .otc-wraper .otc-img {position: absolute;
     left: 0;
     top: 15px;
@@ -345,7 +349,7 @@ h6 {font-size: 2rem;}
 
 .energy-board {background: linear-gradient(180deg, rgba(239, 244, 253, 0.00) 0%, rgba(241, 147, 92, 0.30) 51.04%, rgba(80, 154, 166, 0.30) 100%); padding: 10rem 0;}
 .energy-board .board { border-radius: 35px; border: 3px solid #FFF; background: linear-gradient(76deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100.56%); backdrop-filter: blur(30px); margin-top: 5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-evenly; position: relative;}
-.energy-board .board .item { width: 49%; text-align: center; margin: 3rem 0;}
+.energy-board .board .item { width: 49%; text-align: center; margin: 3rem 0; padding: 0 7rem;}
 .energy-board .board .item img{filter: drop-shadow(4px 20px 30px rgba(241, 147, 92, 0.50)); margin-bottom: 2rem;}
 .energy-board .board .center-circle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .energy-board .board .center-circle::after { content: url('../images/vertical-stroke.png'); position: absolute; top: 50%; transform: translateY(-50%); left: 50%; }
