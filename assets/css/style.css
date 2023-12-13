@@ -143,15 +143,16 @@ ul { padding: 0; margin: 0; list-style: none;}
 a { color: inherit; text-decoration: none;}
 a:hover { color: inherit;}
 
-p { text-align: justify; margin-bottom: 1.5rem; line-height: 1.6;}
-h5 {font-size: 2.2rem;}
-h1, h2, h3, h4, h5, h6 { font-family: 'Marsden Wide Ultra'; font-weight: 900; text-transform: uppercase; }
-h1 {font-size: 4.5rem; margin-bottom: 1.5rem;}
-h2 {font-size: 4rem;  margin-bottom: 2rem;}
-h3 {font-size: 2.5rem;}
-h4 {font-size: 2.2rem;}
+p {text-align: justify; margin-bottom: 2rem; line-height: 1.6;}
+
 h5 {font-size: 2rem;}
-h6 {font-size: 1.8rem;}
+h1, h2, h3, h4, h5, h6 { font-weight: 900; text-transform: uppercase; }
+h1 {font-size: 3.5rem; margin-bottom: 1.5rem; font-family: 'Marsden Wide Ultra';}
+h2 {font-size: 3rem;  margin-bottom: 2rem; font-family: 'Marsden Wide Ultra';}
+h3 {font-size: 2.5rem; font-family: 'Marsden Wide';}
+h4 {font-size: 2.2rem; font-family: 'Marsden Wide';}
+h5 {font-size: 2rem; font-family: 'Marsden Wide';}
+h6 {font-size: 1.8rem; font-family: 'Marsden Wide';}
 
 .orange-text { color: var(--orange); }
 .green-text { color: var(--dark-green);}
@@ -162,7 +163,7 @@ h6 {font-size: 1.8rem;}
 .mb5 { margin-bottom: 5rem }
 .mb7 { margin-bottom: 10rem}
 .btn {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: var(--white);
     padding: 6px 20px;
@@ -188,6 +189,8 @@ h6 {font-size: 1.8rem;}
     color: var(--white);
     filter: drop-shadow(4px 20px 30px rgba(40, 86, 93, 0.50));
 }
+
+section .btn { margin-top: 2rem; position: relative; z-index: 9;}
 
 /* nav css start */
 .custom-nav .logo { max-width: 12rem;}
@@ -235,7 +238,7 @@ h6 {font-size: 1.8rem;}
     padding: 0 10rem;
 }
 .banner-slider-wraper .item-wraper p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -250,7 +253,7 @@ h6 {font-size: 1.8rem;}
     position: relative;
     /* border: 1px solid; */
     height: 55rem;
-    margin-top: 5rem;
+    margin-top: 25rem;
 }
 .slider-img-wraper .img1 {
     position: absolute;
@@ -335,11 +338,9 @@ h6 {font-size: 1.8rem;}
     width: 100%;}
     .otc-plateform .otc-wraper .otc-img img { width: 100%;}
 
-/* .energy-management { padding: 5rem 0;} */
-.energy-management .img-box { background-image: url('../images/energy-management-bg.png'); margin-top: 6rem; background-size: cover;
-    background-position: center;
-    border-radius: 3.5rem;
-    padding: 3rem;}
+.energy-management { padding: 5rem 0; background-image: url('../images/Energy-Management.svg');background-position: center; background-size: contain;}
+.energy-management .img-box {  margin-top: 6rem; border: .2rem solid #f3f3f3; border-radius: 3.5rem; padding: 3rem;}
+    
 .energy-management h4 { margin-bottom: 3rem;}
 
 .green-energy { background: linear-gradient(4deg, rgba(161, 193, 255, 0.40) 0%, #FFF 100%); padding: 0rem 0 10rem 0; }
