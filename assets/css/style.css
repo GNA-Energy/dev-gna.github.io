@@ -190,14 +190,11 @@ h6 {font-size: 1.8rem; font-family: 'Marsden Wide';}
     filter: drop-shadow(4px 20px 30px rgba(40, 86, 93, 0.50));
 }
 
-section .btn { margin-top: 2rem; position: relative; z-index: 9;}
+section .btn { margin-top: 2rem;}
 
 /* nav css start */
 .custom-nav .logo { max-width: 12rem;}
-.custom-nav {
-    background-color: var(--light-orange);
-    padding: 3rem 0 7rem 0;
-}
+.custom-nav { background-color: var(--light-orange);padding: 3rem 0 3rem 0; position: sticky; top: 0; z-index: 3;}
 .custom-nav .navbar-collapse {
     flex-grow: unset;
 }
@@ -214,12 +211,15 @@ section .btn { margin-top: 2rem; position: relative; z-index: 9;}
 /* nav css end */
 
 .banner-slider-wraper {
-    background: linear-gradient(180deg, var(--light-orange) 0%, rgba(255, 255, 255, 0.00) 100%); 
-    /* background: linear-gradient(180deg, var(--light-orange) 0%, rgba(255, 255, 255, 0.00) 100%), url('../images/cross-line-bg.svg');  */
+    /* background: linear-gradient(180deg, var(--light-orange) 0%, rgba(255, 255, 255, 0.00) 100%);  */
+    background: linear-gradient(180deg, var(--light-orange) 0%, rgba(255, 255, 255, 0.00) 100%), url('../images/cross-bg.svg'); 
     background-position: bottom;
     text-align: center;
+    padding-top: 7rem;
+    background-repeat: no-repeat;
 
 }
+.banner-slider-wraper .splide__arrow { top: 67%;}
 .banner-slider-wraper .splide__arrow { background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(241, 147, 92, 0.30) 0%, rgba(241, 147, 92, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.00) 76.6%, rgba(255, 255, 255, 0.00) 100%), #F1935C;}
 .banner-slider-wraper label {
     font-size: 1.3rem;
@@ -301,17 +301,17 @@ section .btn { margin-top: 2rem; position: relative; z-index: 9;}
 .banner-slider-wraper .splide__arrows .splide__arrow {background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(241, 147, 92, 0.30) 0%, rgba(241, 147, 92, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.00) 76.6%, rgba(255, 255, 255, 0.00) 100%), #F1935C; box-shadow: -3px -4px 10px 0px rgba(255, 228, 212, 0.50) inset; filter: drop-shadow(4px 20px 30px rgba(241, 147, 92, 0.50)); opacity: 1;}
 
 .why-us-slider .row { position: relative; }
-.why-us-slider .splide { position: unset;}
+/* .why-us-slider .splide { position: unset;} */
 .why-us-slider .splide .splide__slide { display: flex;}
 .why-us-slider .splide .splide__slide .item-wraper { border-radius: 30px; padding: 3rem; border: 1px solid #FFE4D4; background: linear-gradient(39deg, rgba(255, 228, 212, 0.50) 0%, rgba(255, 228, 212, 0.00) 100%);}
 .why-us-slider .splide .splide__slide .item-wraper img { margin-bottom: 2rem; width: 12rem;}
-.why-us-slider .splide__arrows { position: absolute; left: 1%; top: 67%; transform: translateY(-70%);}
+/* .why-us-slider .splide__arrows { position: absolute; left: 1%; top: 67%; transform: translateY(-70%);} */
     .why-us-slider .splide__arrows .splide__arrow {background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(241, 147, 92, 0.30) 0%, rgba(241, 147, 92, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.00) 76.6%, rgba(255, 255, 255, 0.00) 100%), #F1935C;
         box-shadow: -3px -4px 10px 0px rgba(255, 228, 212, 0.50) inset;
         filter: drop-shadow(4px 20px 30px rgba(241, 147, 92, 0.50)); opacity: 1;}
 .why-us-slider .splide__arrows .splide__arrow:disabled {background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(137, 133, 131, 0.30) 0%, rgba(137, 133, 131, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.00) 76.6%, rgba(255, 255, 255, 0.00) 100%), #898583; opacity: 1;}
-.why-us-slider .splide__arrows .splide__arrow--prev { left: 0;}
-.why-us-slider .splide__arrows .splide__arrow--next { left: 5rem;}
+.why-us-slider .splide__arrows .splide__arrow--prev { left: -2.5rem;}
+.why-us-slider .splide__arrows .splide__arrow--next { right: -2.5rem;}
 
 .our-services { 
     background: var(--dark-green); background: url('../images/green-bg-1.svg'); background-position: center;
@@ -328,17 +328,14 @@ section .btn { margin-top: 2rem; position: relative; z-index: 9;}
 .service-items .item h3 { color: var(--white); text-transform: uppercase;}
 .service-items .item img { margin-right: 4rem; width: 9rem;}
 
-.otc-plateform {background: linear-gradient(180deg, #FBFCFF 0%, #DEE9FF 54.17%); padding: 10rem 0 40rem 0;}
+.otc-plateform {background: linear-gradient(180deg, #FBFCFF 0%, #DEE9FF 54.17%); padding: 10rem 0 5rem 0;}
 /* .otc-plateform:after {position: absolute; content: url('../images/otc-green-bg.svg');} */
-.otc-plateform .otc-wraper { position: relative; position: relative;  padding-left: 13rem;}
+.otc-plateform .otc-wraper { position: relative; position: relative; }
 .otc-plateform .otc-wraper h2 { margin-bottom: 1rem;}
-.otc-plateform .otc-wraper .otc-img {position: absolute;
-    left: 0;
-    top: 15px;
-    width: 100%;}
-    .otc-plateform .otc-wraper .otc-img img { width: 100%;}
+.otc-plateform .otc-wraper .otc-img { margin-top: 6rem;}
+.otc-plateform .otc-wraper .otc-img img { width: 100%;}
 
-.energy-management { padding: 5rem 0; background-image: url('../images/Energy-Management.svg');background-position: center; background-size: contain;}
+.energy-management { padding: 5rem 0; background-image: url('../images/Energy-Management.svg');background-position: center; background-size: contain; background-repeat: no-repeat;}
 .energy-management .img-box {  margin-top: 6rem; border: .2rem solid #f3f3f3; border-radius: 3.5rem; padding: 3rem;}
     
 .energy-management h4 { margin-bottom: 3rem;}
@@ -389,13 +386,13 @@ section .btn { margin-top: 2rem; position: relative; z-index: 9;}
 
 
 /* login css start */
-.map-wraper { background: linear-gradient(180deg, #FFE4D4 0%, rgba(255, 255, 255, 0.00) 100%); text-align: center;}
+.map-wraper { background: linear-gradient(180deg, #FFE4D4 0%, rgba(255, 255, 255, 0.00) 100%); text-align: center; padding-top: 7rem;}
 .map-wraper h1 { margin-bottom: 4rem;}
 .map-wraper label { font-size: 1.3rem; color: var(--orange); background: var(--orange-1); text-transform: uppercase; padding: 0.7rem 2rem 0.5rem 2rem; border-radius: 27px; font-weight: 700; margin-bottom: 3rem;}
-.address-block ul { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; margin-bottom: 12rem; border-radius: 20px; border: 2px solid var(--light-orange);}
-.address-block ul li { border-right: 1px solid var(--light-orange); padding: 3rem 60px; }
+.address-block ul { padding: 1rem 2rem; margin-bottom: 12rem; border-radius: 20px; border: 2px solid var(--orange); margin-left: 3rem;}
+.address-block ul li { border-bottom: 1px solid var(--orange); padding: 3rem; }
 .address-block ul li:last-child { border: 0;}
-.address-block ul li p {margin: 0; color: var(--orange);}
+.address-block ul li p {margin: 0; color: var(--orange); text-align: center;}
 /* login end */
 
 .footer { background-image: url('../images/footer-bg.png'); background-repeat: no-repeat; height: 800px; background-size: cover; position: relative;}
@@ -417,3 +414,5 @@ section .btn { margin-top: 2rem; position: relative; z-index: 9;}
 
 .footer-strip { position: absolute; display: block; top: 0; left: 50%; transform: translate(-50%, -50%); padding: 3rem 6rem; border-radius: 80px; background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(241, 147, 92, 0.30) 0%, rgba(241, 147, 92, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.00) 76.6%, rgba(255, 255, 255, 0.00) 100%), var(--orange); box-shadow: 4px 20px 30px 0px rgba(241, 147, 92, 0.50), -3px -4px 10px 0px rgba(241, 147, 92, 0.50) inset; }
 .footer-strip h4 { margin: 0; line-height: 4rem;}
+
+.bottomTop { position: absolute; bottom: 0; border-radius: 50%; width: 7rem; height: 7rem; background: radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(241, 147, 92, 0.30) 0%, rgba(241, 147, 92, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0.00) 76.6%, rgba(255, 255, 255, 0.00) 100%), #F1935C; box-shadow: 4px 20px 30px 0px rgba(241, 147, 92, 0.50), -3px -4px 10px 0px rgba(241, 147, 92, 0.50) inset; right: 8rem; bottom: 35%; display: flex; align-items: center; justify-content: center;}

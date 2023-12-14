@@ -68,13 +68,14 @@
     .mb5 { margin-bottom: 2rem;}
     .mb7 { margin-bottom: 7rem;}
 
-    .btn { font-size: 1.1rem; padding: 1.5rem;}
+    .btn { font-size: 1.1rem; }
 
     .banner-slider-wraper label { font-size: .9rem; border-radius: 2rem; padding: .8rem 2rem .5rem 2rem;}
     .banner-slider-wraper .item-wraper { padding: 0; }
     .banner-slider-wraper .item-wraper p { font-size: 1.1rem; padding: 0px 4rem;}
+    .banner-slider-wraper .item-wraper .img-box img { width: 100%;}
 
-    .why-us-slider .splide__arrows {bottom: -30px; top: unset; transform: unset; left: 50%; transform: translateX(-50%);}
+    .why-us-slider .splide__arrows {bottom: -30px; top: unset; transform: unset; left: 50%; transform: translateX(-50%); position: absolute;}
     .why-us-slider .splide__arrows .splide__arrow--next { left: 4rem;}
     .why-us-slider .splide .splide__slide .item-wraper img {margin-bottom: 1rem; width: 6.2rem;}
     .why-us-slider .splide .splide__slide .item-wraper p { margin: 0;}
@@ -103,11 +104,16 @@
     .energy-management .img-box { margin-top: 3rem;}
     .energy-board {padding: 7rem 0;}
     .energy-board .board .item { padding: 0 2rem; }
+    .energy-board .board .item h5 { font-size: 1.4rem; }
     .energy-board .board .item img { width: 5.2rem;}
     .energy-board .board .center-circle img { width: 7rem;}
     .energy-board .board .center-circle h6 { top: 55%; font-size: 1.3rem;}
     .energy-board .board .center-circle::before {content: url('../images/mobile-horizontal-stroke.svg');}
     .who-we-are .logos { margin-bottom: 3rem;}
+
+    .banner-slider-wraper.otc { margin-bottom: 10rem;}
+
+    .address-block ul { margin-left: unset;}
 
     .footer { background: url('../images/m-footer-bg.svg'); height: auto;}
     .footer-abs {position: unset; transform: unset;}
