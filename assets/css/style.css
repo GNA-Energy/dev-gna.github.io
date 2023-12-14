@@ -155,7 +155,7 @@ h5 {font-size: 2rem; font-family: 'Marsden Wide';}
 h6 {font-size: 1.8rem; font-family: 'Marsden Wide';}
 
 .orange-text { color: var(--orange); }
-.green-text { color: var(--dark-green);}
+.green-text { padding: 2rem 0; color: var(--dark-green);}
 .fw7 {font-weight: 700;}
 
 /* section .btn { margin-bottom: 3rem;} */
@@ -343,7 +343,7 @@ section .btn { margin-top: 2rem; position: relative; z-index: 9;}
     
 .energy-management h4 { margin-bottom: 3rem;}
 
-.green-energy { background: linear-gradient(4deg, rgba(161, 193, 255, 0.40) 0%, #FFF 100%); padding: 0rem 0 10rem 0; }
+.green-energy { background: linear-gradient(4deg, rgba(161, 193, 255, 0.40) 0%, #FFF 100%); padding: 10rem 0 10rem 0; }
 .green-energy h2 { margin: 0;}
 .green-energy h4 { margin-bottom: 2rem;}
 .enery-card { display: flex; justify-content: space-between; margin-top: 5rem;}
